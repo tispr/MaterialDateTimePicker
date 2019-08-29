@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/mdtp_time_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/mdtp_accent_color"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/mdtp_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:paddingLeft="@dimen/mdtp_separator_padding"
+        android:paddingRight="@dimen/mdtp_separator_padding"
+        android:text="@string/mdtp_time_separator"
+        android:textColor="@color/mdtp_accent_color_focused"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/mdtp_minutes"
+        app:layout_constraintStart_toEndOf="@+id/mdtp_hours"
+        app:layout_constraintBottom_toBottomOf="@+id/mdtp_hours" />
+
+    <TextView
+        android:id="@+id/mdtp_hour_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/mdtp_separator"
+        android:importantForAccessibility="no"
+        android:text="@string/mdtp_time_hours_label"
+        android:textColor="@color/mdtp_white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mdtp_hours"
+        app:layout_constraintStart_toStartOf="@+id/mdtp_hours"
+        app:layout_constraintTop_toBottomOf="@+id/mdtp_hours" />
+
+    <TextView
+        android:id="@+id/mdtp_minutes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:importantForAccessibility="no"
+        android:text="@string/mdtp_time_mins_label"
+        android:textColor="@color/mdtp_accent_color_focused"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mdtp_minutes"
+        app:layout_constraintStart_toStartOf="@+id/mdtp_minutes"
+        app:layout_constraintTop_toBottomOf="@+id/mdtp_minutes" />
+
+    <com.wdullaer.materialdatetimepicker.AccessibleTextView
+        android:id="@+id/mdtp_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mdtp_time_placeholder"
+        android:textColor="@color/mdtp_white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/mdtp_hour_label"
+        app:layout_constraintEnd_toStartOf="@+id/mdtp_separator"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.wdullaer.materialdatetimepicker.AccessibleTextView
+        android:id="@+id/mdtp_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/mdtp_time_placeholder"
+        android:textColor="@color/mdtp_accent_color_focused"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/mdtp_minutes_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mdtp_separator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

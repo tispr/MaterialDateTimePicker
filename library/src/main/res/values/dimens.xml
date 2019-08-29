@@ -37,7 +37,7 @@
     <dimen name="mdtp_done_label_size">14sp</dimen>
     <dimen name="mdtp_ampm_left_padding">6dip</dimen>
     <dimen name="mdtp_separator_padding">4dip</dimen>
-    <dimen name="mdtp_header_height">96dip</dimen>
+    <dimen name="mdtp_header_height">84dip</dimen>
     <dimen name="mdtp_footer_height">48dip</dimen>
     <dimen name="mdtp_minimum_margin_sides">48dip</dimen>
     <dimen name="mdtp_minimum_margin_top_bottom">24dip</dimen>

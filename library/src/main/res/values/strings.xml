@@ -77,6 +77,11 @@
     <string name="mdtp_previous_month_arrow_description">Previous Month</string>
 
     <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_mins_label" translatable="false">MIN</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_hours_label" translatable="false">HRS</string>
+
+    <!-- DO NOT TRANSLATE -->
     <string name="mdtp_time_placeholder" translatable="false">00</string>
     <!-- DO NOT TRANSLATE -->
     <string name="mdtp_time_separator" translatable="false">:</string>

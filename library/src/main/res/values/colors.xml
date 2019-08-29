@@ -29,6 +29,7 @@
     <color name="mdtp_transparent_black">#7f000000</color>
     <color name="mdtp_accent_color">#009688</color>
     <color name="mdtp_accent_color_focused">#76ffffff</color>
+    <color name="mdtp_accent_color_70opaque">#B2FFFFFF</color>
     <color name="mdtp_neutral_pressed">#33999999</color>
     <color name="mdtp_accent_color_dark">#00796b</color>
     <color name="mdtp_date_picker_text_normal">#ff212121</color>
@@ -62,4 +63,17 @@
     <color name="mdtp_done_text_color_dark_normal">#ffffff</color>
     <color name="mdtp_done_text_color_dark_disabled">#888888</color>
     <color name="mdtp_done_disabled_dark">#bfbfbf</color>
+
+
+    <!-- TDL state colors -->
+    <color name="tdl_overlay_gray">#1A000000</color>
+    <color name="tdl_focused">@color/tdl_overlay_gray</color>
+    <color name="tdl_pressed">@color/tdl_focused</color>
+    <color name="tdl_disabled">#80ffffff</color>
+
+    <color name="tdl_green400">#23c14c</color>
+    <color name="tdl_secondary_dark">#333333</color>
+    <color name="tdl_grays_08">#eeede9</color>
+
+
 </resources>
