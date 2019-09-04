@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/color_tdl_gray08_default"/>
+    <item android:drawable="@color/tdl_focused"/>
+
+</layer-list>

@@ -409,7 +409,7 @@ public class DatePickerDialog extends AppCompatDialogFragment implements
         animation2.setDuration(ANIMATION_DURATION);
         mAnimator.setOutAnimation(animation2);
 
-        Button okButton = view.findViewById(R.id.mdtp_ok);
+        TextView okButton = view.findViewById(R.id.mdtp_ok);
         okButton.setOnClickListener(v -> {
             tryVibrate();
             notifyOnDateListener();
@@ -419,7 +419,7 @@ public class DatePickerDialog extends AppCompatDialogFragment implements
         if (mOkString != null) okButton.setText(mOkString);
         else okButton.setText(mOkResid);
 
-        Button cancelButton = view.findViewById(R.id.mdtp_cancel);
+        TextView cancelButton = view.findViewById(R.id.mdtp_cancel);
         cancelButton.setOnClickListener(v -> {
             tryVibrate();
             if (getDialog() != null) getDialog().cancel();
@@ -436,16 +436,7 @@ public class DatePickerDialog extends AppCompatDialogFragment implements
         if (mDatePickerHeaderView != null) mDatePickerHeaderView.setBackgroundColor(Utils.darkenColor(mAccentColor));
         view.findViewById(R.id.mdtp_day_picker_selected_date_layout).setBackgroundColor(mAccentColor);
 
-        // Buttons can have a different color
-        if (mOkColor == null) {
-            mOkColor = mAccentColor;
-        }
-        okButton.setTextColor(mOkColor);
 
-        if (mCancelColor == null) {
-            mCancelColor = mAccentColor;
-        }
-        cancelButton.setTextColor(mCancelColor);
 
         if (getDialog() == null) {
             view.findViewById(R.id.mdtp_done_background).setVisibility(View.GONE);
